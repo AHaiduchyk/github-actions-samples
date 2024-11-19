@@ -15,6 +15,11 @@ else:
 def hello():
 	return message 
 
+@app.route('/test')
+def test():
+    return 'Your deployment is amazing'
+
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8050)
