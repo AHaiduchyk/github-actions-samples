@@ -7,7 +7,7 @@ config.read('config.properties')
 app = Flask(__name__)
 
 if config.getboolean("features", "feature_1") == True:
-	message = "Hello, Sasha!"
+	message = "Your deployment is amazing"
 else:
 	message = "Hello, World!"
 
@@ -15,9 +15,6 @@ else:
 def hello():
 	return message 
 
-@app.route('/test')
-def test():
-    return 'Your deployment is amazing'
 
 
 
